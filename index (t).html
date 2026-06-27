@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-82B1WJ3HVC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-82B1WJ3HVC');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MIANJU is a luxury womenswear fashion house with a private Collection 01 checkout experience." />
+    <title>MIANJU | &#38754;&#20855;</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://js.stripe.com/v3/" defer></script>
+  </head>
+  <body>
+
+    <header class="site-header" data-header>
+      <a class="brand-lockup" href="#home" aria-label="MIANJU home">
+        <img src="Assets/flower-mark.png" alt="" class="nav-flower" />
+        <span>MIANJU</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#house">House</a>
+        <a href="#collection">Collection</a>
+        <a href="#returns">Returns</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="bag-link" type="button" data-cart-open>
+          Bag <span data-cart-count>0</span>
+        </button>
+        <button class="nav-hamburger" aria-label="Toggle navigation" data-nav-toggle aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+
+      <!-- HERO -->
+      <section class="hero section-dark" aria-label="MIANJU Collection 01">
+        <div class="hero-image parallax-image" data-parallax="0.16"></div>
+        <div class="hero-scrim"></div>
+        <div class="hero-content reveal">
+          <img src="Assets/flower-mark.png" alt="" class="hero-flower" />
+          <p class="chapter">Collection 01</p>
+          <h1>MIANJU</h1>
+          <p class="hanzi" lang="zh">&#38754;&#20855;</p>
+          <a href="#collection" class="hero-cta">Shop Collection</a>
+        </div>
+      </section>
+
+      <!-- MANIFESTO -->
+      <section class="manifesto panel" aria-label="Manifesto">
+        <div class="manifesto-lines reveal">
+          <p>Between structure and softness.</p>
+          <p>Between presence and restraint.</p>
+          <p>Between who you are and who you become.</p>
+        </div>
+      </section>
+
+      <!-- HOUSE -->
+      <section class="house panel" id="house">
+        <p class="section-kicker reveal">The House of MIANJU</p>
+        <div class="house-grid">
+          <h2 class="reveal">A Study In Restraint</h2>
+          <div class="house-copy reveal">
+            <p>
+              MIANJU explores the balance between structure and softness.
+              Each silhouette is refined to its essential form: quiet,
+              deliberate and enduring.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDITORIAL: LUMIÈRE -->
+      <section class="editorial-feature feature-left">
+        <figure class="feature-media reveal">
+          <div class="campaign-image image-lumiere parallax-image" data-parallax="0.1"></div>
+        </figure>
+        <div class="feature-copy reveal">
+          <p class="section-kicker">Chapter I</p>
+          <h2>Lumi&egrave;re</h2>
+          <p>Structured femininity.</p>
+        </div>
+      </section>
+
+      <!-- EDITORIAL: SOIRÉE -->
+      <section class="editorial-feature feature-right">
+        <figure class="feature-media reveal">
+          <div class="campaign-image image-soiree parallax-image" data-parallax="0.1"></div>
+        </figure>
+        <div class="feature-copy reveal">
+          <p class="section-kicker">Chapter II</p>
+          <h2>Soir&eacute;e</h2>
+          <p>Quiet confidence.</p>
+        </div>
+      </section>
+
+      <!-- COLLECTION GRID -->
+      <section class="collection panel" id="collection" aria-label="Shop Collection 01">
+        <div class="collection-heading reveal">
+          <p class="section-kicker">Private Selection</p>
+          <h2>Collection 01</h2>
+          <p>
+            A focused edit of occasion pieces, softened tailoring and essential
+            forms. Please allow approximately 2–3 weeks for dispatch from Melbourne.
+          </p>
+        </div>
+        <div class="collection-grid" data-products></div>
+      </section>
+
+      <!-- RETURNS -->
+      <section class="returns panel" id="returns" aria-label="Returns and Refunds">
+        <div class="returns-inner">
+          <div class="returns-header reveal">
+            <p class="section-kicker">Policy</p>
+            <h2>Returns &amp; Refunds</h2>
+          </div>
+          <div class="returns-grid">
+            <div class="returns-block reveal">
+              <h3>Our Commitment</h3>
+              <p>
+                We want you to love your MIANJU purchase. If your item arrives
+                damaged, faulty, or significantly different from its description,
+                contact us within <strong>7 days of delivery</strong> and we will
+                arrange a refund, replacement, or store credit as appropriate.
+              </p>
+            </div>
+            <div class="returns-block reveal">
+              <h3>Change of Mind</h3>
+              <p>
+                As a small independent label, change-of-mind returns are not
+                accepted at this time. We encourage you to review sizing carefully
+                before placing your order. Our team is happy to assist with fit
+                questions before purchase.
+              </p>
+            </div>
+            <div class="returns-block reveal">
+              <h3>Return Shipping</h3>
+              <p>
+                For eligible returns, customers are responsible for return shipping
+                costs. We recommend using a tracked service. MIANJU is not liable
+                for items lost in transit on return.
+              </p>
+            </div>
+            <div class="returns-block reveal">
+              <h3>Pre-Order Items</h3>
+              <p>
+                As pieces are produced specifically in response to demand,
+                pre-orders cannot be cancelled once production has commenced.
+              </p>
+            </div>
+            <div class="returns-block reveal">
+              <h3>How to Request</h3>
+              <p>
+                Email <a href="mailto:hello@mianju.com.au">hello@mianju.com.au</a>
+                with your order number and photographs of the issue within 7 days of
+                receiving your order. We aim to respond within 2 business days.
+              </p>
+            </div>
+            <div class="returns-block reveal">
+              <h3>Refund Timeline</h3>
+              <p>
+                Approved refunds are processed within <strong>5–10 business days</strong>
+                back to your original payment method. You will receive an email
+                confirmation once your refund has been issued.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BRAND STATEMENT -->
+      <section class="brand-statement section-dark">
+        <div class="statement-inner reveal">
+          <img src="Assets/flower-mark.png" alt="" />
+          <p lang="zh">&#38754;&#20855;</p>
+          <h2>A mask does not conceal.</h2>
+          <h2>It reveals.</h2>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- CART PANEL -->
+    <aside class="cart-panel" aria-hidden="true" data-cart-panel>
+      <div class="panel-head">
+        <div>
+          <p class="section-kicker">Private Bag</p>
+          <h2>Your Selection</h2>
+        </div>
+        <button type="button" aria-label="Close bag" data-cart-close>&times;</button>
+      </div>
+
+      <div class="cart-empty" data-cart-empty>Your bag is empty.</div>
+      <div class="cart-items" data-cart-items></div>
+
+      <div class="gift-panel" data-gift-panel>
+        <p class="section-kicker">Complimentary Gift</p>
+        <h3>Choose one accessory with every order over $30.</h3>
+        <div class="gift-options" data-gift-options></div>
+        <p class="gift-note" data-gift-note>Add more to your bag to unlock your complimentary gift.</p>
+      </div>
+
+      <div class="cart-summary">
+        <div><span>Subtotal</span><strong data-subtotal>A$0</strong></div>
+        <div><span>Shipping</span><strong data-shipping>Complimentary</strong></div>
+        <div class="summary-total"><span>Total</span><strong data-total>A$0</strong></div>
+        <button type="button" class="primary-button" data-checkout-open>Proceed to Checkout</button>
+      </div>
+    </aside>
+    <button class="cart-backdrop" type="button" aria-label="Close bag" data-cart-close></button>
+
+    <!-- CHECKOUT MODAL -->
+    <section class="checkout-modal" aria-hidden="true" data-checkout>
+      <div class="checkout-card">
+        <button class="checkout-close" type="button" aria-label="Close checkout" data-checkout-close>&times;</button>
+        <p class="section-kicker">Secure Checkout</p>
+        <h2>Complete your order</h2>
+
+        <div class="checkout-layout">
+          <!-- LEFT: delivery + payment -->
+          <div class="checkout-fields-wrap">
+            <h3 class="fields-heading">Delivery Details</h3>
+            <div class="checkout-fields" data-step="details">
+              <label>Full name<input name="name" autocomplete="name" required /></label>
+              <label>Email<input name="email" type="email" autocomplete="email" required /></label>
+              <label>Phone<input name="phone" type="tel" autocomplete="tel" required /></label>
+              <label class="full-width">Address<input name="address" autocomplete="street-address" required /></label>
+              <label>City<input name="city" autocomplete="address-level2" required /></label>
+              <label>State<input name="state" autocomplete="address-level1" required /></label>
+              <label>Postcode<input name="postcode" autocomplete="postal-code" required /></label>
+              <label>Country<input name="country" value="Australia" autocomplete="country-name" required /></label>
+            </div>
+
+            <h3 class="fields-heading" style="margin-top:1.5rem;">Payment</h3>
+            <div id="stripe-payment-element"></div>
+            <div id="stripe-error" class="stripe-error" hidden></div>
+          </div>
+
+          <!-- RIGHT: order summary -->
+          <div class="checkout-review">
+            <h3>Order Summary</h3>
+            <div data-checkout-items></div>
+            <div class="checkout-total">
+              <span>Total</span>
+              <strong data-checkout-total>A$0</strong>
+            </div>
+            <p class="checkout-note">
+              All prices in Australian Dollars. Secured by Stripe.
+              Flat rate shipping A$7.90.
+              Your card details never touch our server.
+            </p>
+          </div>
+        </div>
+
+        <button class="primary-button place-order" type="button" data-place-order>
+          <span data-order-label>Pay now</span>
+          <span class="spinner" hidden data-spinner></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ORDER CONFIRMATION -->
+    <section class="order-confirmation" aria-hidden="true" data-confirmation>
+      <div>
+        <p class="section-kicker">Order Received</p>
+        <h2>Thank you.</h2>
+        <p data-confirmation-copy>Your private order has been prepared.</p>
+        <button class="primary-button" type="button" data-confirmation-close>Return to collection</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="contact">
+      <img src="Assets/flower-mark.png" alt="" />
+      <h2>MIANJU</h2>
+      <p lang="zh">&#38754;&#20855;</p>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/mianju.au/" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.tiktok.com/@mianju.au" target="_blank" rel="noreferrer" aria-label="TikTok">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+          TikTok
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61590862143821" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook
+        </a>
+        <a href="mailto:hello@mianju.com.au">Contact</a>
+      </div>
+      <small>&copy; 2026 MIANJU. All rights reserved. ABN registered in Australia.</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
